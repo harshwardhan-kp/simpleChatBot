@@ -1,0 +1,6 @@
+{
+  "installCommand": "if cd flutter; then git pull && cd ..; else git clone https://github.com/flutter/flutter.git; fi && flutter/bin/flutter doctor && flutter/bin/flutter clean && flutter/bin/flutter config --enable-web",
+  "buildCommand": "[ -n \"${GROQ_APIKEY}\" ] || { echo \"Error: GROQ_APIKEY environment variable is not set\"; exit 1; } && echo \"GROQ_APIKEY=${GROQ_APIKEY}\" > .env && flutter/bin/flutter build web --release",
+  "outputDirectory": "build/web",
+  "framework": null
+}
