@@ -46,3 +46,4 @@ macos/Flutter/ephemeral/
 .env
 *.env
 *.env.*
+!.env.example
